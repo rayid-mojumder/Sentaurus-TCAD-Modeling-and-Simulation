@@ -1,4 +1,4 @@
-# Sentaurus-TCAD-Modeling-and-Simulation
+# Sentaurus TCAD Modeling and Simulation
 
 This repository provides **example simulation files and learning materials** for semiconductor device modeling using **Synopsys Sentaurus TCAD**. It is designed for beginners and intermediate users who want a practical workflow from structure creation to results visualization.
 
