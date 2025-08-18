@@ -1,0 +1,51 @@
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1727 (tree) + 126 (boundary)
+
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1744 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1675 points.
+    3243 elements.
+       5 regions.
+Max. connectivity = 7 located at (0.015;0.025)
+
+
+==============================  tri-grid quality  ================================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %   .    1   1   2  28  28   5   2   1  32                                
+---------------------------------------------------------------------------------
+minAngle: 4.76364  maxAngle: 90
+nVerts = 1675  nTris = 3243  nMats = 2
+max connectivity (tris per node): 7 [near (0.015 0.025)]
+bmin: -0 -0
+bmax: 0.12 0.05
+min edgeLength: 0.00015625  [near (0.0496875 0.0399219)]
+min volume: 2.44141e-08  max volume: 2.34375e-05  Total volume: 0.005
+bbox  volume: 0.006
+Are all boundaries on bbox? false
+=================================================================================
+
+Smallest region: region_2  Total volume: 0.0002
+Interpolating data...done.
+Saving file /home/mvm7218/IEEE_DIU_Webinar/20nm_NFET_msh.tdr...done.
+
+===============================  Timer Report===================================
+              Total Mesh Generation Time:    0.0899s       100%
+                       Rate of #Vertices:  1.86e+04
+                          Rate of #Edges:  3.64e+04
+                          Rate of #Faces:  3.61e+04
+                       Rate of #Elements:         0
+
+                            Time Covered:         0s         0%
+

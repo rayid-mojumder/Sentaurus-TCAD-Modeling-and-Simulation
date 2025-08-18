@@ -1,0 +1,157 @@
+###########################################
+# Sentaurus Visual W-2024.09.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 17, 2025. 02:24:10.
+# Version: 2024.09.9150440
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: e5-ee-sentaurus.ad.psu.edu.
+# Machine: Linux, x86_64, linux64.
+# Kernel: 5.14.0-503.21.1.el9_5.x86_64.
+###########################################
+
+load_file /home/mvm7218/IEEE_DIU_Webinar/Id_Vg_ramp_dgs.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> Id_Vg_ramp_dgs
+create_curve -axisX {gate InnerVoltage} -axisY {drain TotalCurrent} -dataset {Id_Vg_ramp_dgs} -plot Plot_1
+#-> Curve_1
+set_axis_prop -plot Plot_1 -axis y -title "Id (Drain Current, A)"
+#-> 0
+set_axis_prop -plot Plot_1 -axis x -title "Vg (Gate Voltage, V)"
+#-> 0
+set_axis_prop -plot Plot_1 -axis x -title "Vg (Gate Voltage, V)"
+#-> 0
+load_file /home/mvm7218/IEEE_DIU_Webinar/dgs.tdr -fod
+create_plot -dataset dgs
+select_plots {Plot_dgs}
+#-> Plot_dgs
+#-> Plot_dgs
+#-> dgs
+set_legend_prop -plot Plot_dgs -position {0.750774 0.347976} -size {0.237779 0.3}
+#-> 0
+set_legend_prop -plot Plot_dgs -position {0.743741 0.423001} -size {0.237779 0.3}
+#-> 0
+select_plots {Plot_1}
+#-> Plot_1
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 2
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 3
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 4
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 5
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 6
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 7
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 8
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 7
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 6
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -line_width 5
+#-> 0
+set_curve_prop {Curve_1} -plot Plot_1 -markers_size 3
+#-> 0
+select_plots {Plot_dgs}
+#-> Plot_dgs
+select_plots {Plot_1}
+#-> Plot_1
+set_axis_prop -plot Plot_1 -axis y -inverted
+#-> 0
+set_axis_prop -plot Plot_1 -axis y -not_inverted
+#-> 0
+set_axis_prop -plot Plot_1 -axis y -type log
+#-> 0
+select_plots {Plot_dgs}
+#-> Plot_dgs
+set_field_prop DopingConcentration -plot Plot_dgs -geom dgs -hide_bands
+#-> 0
+set_field_prop ElectricField-X -plot Plot_dgs -geom dgs -show_bands
+#-> 0
+set_field_prop ElectricField-X -plot Plot_dgs -geom dgs -hide_bands
+#-> 0
+set_field_prop eMobility -plot Plot_dgs -geom dgs -show_bands
+#-> 0
+set_field_prop eMobility -plot Plot_dgs -geom dgs -hide_bands
+#-> 0
+set_field_prop TotalCurrentDensity-X -plot Plot_dgs -geom dgs -show_bands
+#-> 0
+set_field_prop TotalCurrentDensity-X -plot Plot_dgs -geom dgs -hide_bands
+#-> 0
+set_field_prop ConductionBandEnergy -plot Plot_dgs -geom dgs -show_bands
+#-> 0
+set_field_prop ConductionBandEnergy -plot Plot_dgs -geom dgs -hide_bands
+#-> 0
+load_file /home/mvm7218/IEEE_DIU_Webinar/Gateramp__0002_des.tdr -fod
+create_plot -dataset Gateramp__0002_des
+select_plots {Plot_Gateramp__0002_des}
+#-> Plot_Gateramp__0002_des
+#-> Plot_Gateramp__0002_des
+#-> Gateramp__0002_des
+select_plots {Plot_dgs}
+#-> Plot_dgs
+select_plots {Plot_Gateramp__0002_des}
+#-> Plot_Gateramp__0002_des
+set_field_prop LatticeTemperature -plot Plot_Gateramp__0002_des -geom Gateramp__0002_des -show_bands
+#-> 0
+set_field_prop LatticeTemperature -plot Plot_Gateramp__0002_des -geom Gateramp__0002_des -hide_bands
+#-> 0
+set_field_prop ValenceBandEnergy -plot Plot_Gateramp__0002_des -geom Gateramp__0002_des -show_bands
+#-> 0
+set_field_prop TotalCurrentDensity-X -plot Plot_Gateramp__0002_des -geom Gateramp__0002_des -show_bands
+#-> 0
+load_file /home/mvm7218/IEEE_DIU_Webinar/Gateramp__0008_des.tdr -fod
+create_plot -dataset Gateramp__0008_des
+select_plots {Plot_Gateramp__0008_des}
+#-> Plot_Gateramp__0008_des
+#-> Plot_Gateramp__0008_des
+#-> Gateramp__0008_des
+select_plots {Plot_Gateramp__0002_des}
+#-> Plot_Gateramp__0002_des
+set_legend_prop -plot Plot_Gateramp__0002_des -position {0.674824 0.45825} -size {0.270922 0.3}
+#-> 0
+select_plots {Plot_Gateramp__0008_des}
+#-> Plot_Gateramp__0008_des
+set_legend_prop -plot Plot_Gateramp__0008_des -position {0.662166 0.446322} -size {0.237779 0.3}
+#-> 0
+set_field_prop eMobility -plot Plot_Gateramp__0008_des -geom Gateramp__0008_des -show_bands
+#-> 0
+select_plots {Plot_dgs}
+#-> Plot_dgs
+set_field_prop Abs(ElectricField-V) -plot Plot_dgs -geom dgs -show_bands
+#-> 0
+set_axis_prop -plot Plot_dgs -axis x -title "length (mm)"
+#-> 0
+set_axis_prop -plot Plot_dgs -axis y -title "length (mm)"
+#-> 0
+select_plots {Plot_Gateramp__0002_des}
+#-> Plot_Gateramp__0002_des
+set_axis_prop -plot Plot_Gateramp__0002_des -axis x -title "length (mm)"
+#-> 0
+set_axis_prop -plot Plot_Gateramp__0002_des -axis y -title "length (mm)"
+#-> 0
+select_plots {Plot_Gateramp__0008_des}
+#-> Plot_Gateramp__0008_des
+set_axis_prop -plot Plot_Gateramp__0008_des -axis x -title "length (mm)"
+#-> 0
+set_axis_prop -plot Plot_Gateramp__0008_des -axis y -title "length (mm)"
+#-> 0
+select_plots {Plot_1}
+#-> Plot_1
+set_axis_prop -plot Plot_1 -axis x -title_font_family arial -title_font_size 10 -title_font_color #000000 -title_font_att bold
+#-> 0
+set_axis_prop -plot Plot_1 -axis x -title_font_family arial -title_font_size 13 -title_font_color #000000 -title_font_att bold
+#-> 0
+set_axis_prop -plot Plot_1 -axis y -title_font_family arial -title_font_size 13 -title_font_color #000000 -title_font_att bold
+#-> 0
+set_axis_prop -plot Plot_1 -axis y -title_font_family arial -title_font_size 13 -title_font_color #000000 -title_font_att bold
+#-> 0
+set_axis_prop -plot Plot_1 -axis y -title_font_family arial -title_font_size 13 -title_font_color #000000 -title_font_att bold
+#-> 0

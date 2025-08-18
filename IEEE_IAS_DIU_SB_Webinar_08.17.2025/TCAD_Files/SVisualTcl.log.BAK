@@ -1,0 +1,23 @@
+###########################################
+# Sentaurus Visual W-2024.09.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 17, 2025. 02:20:07.
+# Version: 2024.09.9150440
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: e5-ee-sentaurus.ad.psu.edu.
+# Machine: Linux, x86_64, linux64.
+# Kernel: 5.14.0-503.21.1.el9_5.x86_64.
+###########################################
+
+load_file /home/mvm7218/IEEE_DIU_Webinar/Id_Vg_ramp_dgs.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> Id_Vg_ramp_dgs
+create_curve -axisX {gate OuterVoltage} -axisY {drain TotalCurrent} -dataset {Id_Vg_ramp_dgs} -plot Plot_1
+#-> Curve_1
+exit 0
+ 
